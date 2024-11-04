@@ -85,8 +85,6 @@ const FormBuilder: React.FC = () => {
                 ))}
             </div>
         </div>
-
-
     )
 }
 

@@ -1,50 +1,27 @@
-# React + TypeScript + Vite
+# Basic Form Builder built with React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This application is built with React, React Hook Form, React DnD, and
+TailwindCss.
 
-Currently, two official plugins are available:
+The Main Features are:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+-   Creating Form Fields (Text, Date, Single Choices, Multiple Choices) by Drag
+    and Drop them in an area.
 
-## Expanding the ESLint configuration
+-   The user (form-creator) can set some simple custom validation to be applied
+    to the generated form
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+-   There is a Undo/Redo Feature.
 
-- Configure the top-level `parserOptions` property like this:
+## How to run this project on your machine?
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+You have to have NodeJs installed in your local pc. Then you have to download
+the zip or clone the github repo in your pc.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+-   Then navigate to the downloaded project folder
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+-   Open a terminal in that folder
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+-   Run `npm i` to install the third party dependencies.
+
+-   And then run `npm run dev` to run the project on your local machine
